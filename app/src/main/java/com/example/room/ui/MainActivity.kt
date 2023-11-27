@@ -67,15 +67,15 @@ class MainActivity  : AppCompatActivity() {
                 budget.id = createdBudgetId
                 documentReference.set(budget)
                     .addOnSuccessListener {
-                        Log.d("SecondActivity", "Budget successfully added!")
+                        Log.d("MainActivity", "Budget successfully added!")
                         navigateToMainActivity()
                     }
                     .addOnFailureListener { e ->
-                        Log.d("SecondActivity", "Error adding budget: ", e)
+                        Log.d("MainActivity", "Error adding budget: ", e)
                     }
             }
             .addOnFailureListener { e ->
-                Log.d("SecondActivity", "Error adding budget: ", e)
+                Log.d("MainActivity", "Error adding budget: ", e)
             }
     }
 
@@ -83,11 +83,11 @@ class MainActivity  : AppCompatActivity() {
         budgetCollectionRef.document(budget.id)
             .set(budget)
             .addOnSuccessListener {
-                Log.d("SecondActivity", "Budget successfully updated!")
+                Log.d("MainActivity", "Budget successfully updated!")
                 navigateToMainActivity()
             }
             .addOnFailureListener { e ->
-                Log.d("SecondActivity", "Error updating budget: ", e)
+                Log.d("MainActivity", "Error updating budget: ", e)
             }
     }
 
