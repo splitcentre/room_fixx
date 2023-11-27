@@ -6,13 +6,13 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:layout_height="match_parent"
-    >
+    tools:context=".ui.MainActivity">
+
     <EditText
         android:id="@+id/edt_nominal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:hint="Nominal"/>
+        android:hint="aduan"/>
     <EditText
         android:id="@+id/edt_desc"
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         android:id="@+id/edt_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Tanggal"/>
+        android:hint="pengadu"/>
     <Button
         android:id="@+id/btn_add"
         android:layout_width="wrap_content"
@@ -33,8 +33,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Update Data"/>
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
 </LinearLayout>
