@@ -36,13 +36,13 @@ class MainActivity  : AppCompatActivity() {
         val receivedDescription = intent.getStringExtra("DESCRIPTION")
         val receivedDate = intent.getStringExtra("DATE")
 
-        // Kemudian, gunakan data yang diterima untuk mengisi EditText atau di tempat lainnya
+
         binding.edtNominal.setText(receivedNominal)
         binding.edtDesc.setText(receivedDescription)
         binding.edtDate.setText(receivedDate)
 
         binding.btnUpdate.setOnClickListener {
-            onUpdateClicked() // Panggil fungsi onUpdateClicked saat tombol diklik
+            onUpdateClicked()
         }
 
         binding.btnAdd.setOnClickListener {
